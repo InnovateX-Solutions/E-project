@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./Assets/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/CSS/sign.css">
+</head>
+
+<body> 
+    <section>
+    <div class="container  d-flex justify-content-center " style="background-color: none; margin-top:8rem ;">
+        <div class="row">
+            <div class="col-12">
+                <h1 style="color: rgb(255, 0, 0); font-family: font-bebas; text-shadow: 0 0 15px black;">Welcome to <img class="img-thumbnail" src="./Assets/Images/Logo/Logo Without Background V2.png" width="250px" alt=""></h1>
+                <p style="color: white; margin-bottom: 0;">Theatron Theatre – Where Stories Come to Life!</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" >
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mx-auto" style="margin-top: 2rem; padding: 25px;" >
+               
+                <div id="signup" class="justify-content-center align-items-center" style=" border: 4px solid rgb(0, 0, 0); box-shadow: 0 0 25px rgb(0, 0, 0); padding: 2rem; border-radius: 10px; backdrop-filter: blur(10px); color: white;">
+                    <h1 class="text-center" style="color: white; font-family: font-bebas; font-size: 3.5rem;">Sign <span style="color: rgb(255, 0, 0); font-family: font-bebas; font-size: 3.5rem;">Up</span></h1>
+              
+<form>
+
+                <!-- Name -->
+                <label for="">Full Name</label>
+                <input  required id="full" class="form-control " type="text"><br>
+
+<!-- Number -->
+                <label for="">Contact Number</label>
+                <input  required id="num" class="form-control " type="text"><br>
+<!-- gender -->
+               
+                <input required   type="radio" value="Male" name="gender"> Male
+                &nbsp;&nbsp;&nbsp;&nbsp;<input required  type="radio" value="Female" name="gender"> Female<br><br>
+<!-- Email -->
+                <label for="">New Email</label>
+                <input required id="email" class="form-control " type="email"><br>
+
+                <!-- password -->
+                <label for="">New Password</label>
+                <input required id="message-text" class="form-control " type="password" maxlength="8">
+                <input type="checkbox" name="" id="" onclick="password()"> Show Password
+                <br><br>
+
+
+                <!-- confirm password -->
+               
+<div id="btn-links"   style="display: flex; justify-content:flex-start;">
+ <h6 class="">Aleady Have An Account</h6><a href="./login.html" class="" style="text-decoration: none; transform: translateY(-2px); " >&nbsp;Login</a>             
+            </div><br>
+            <button class="btn" onclick="signup()" type="submit" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);" >Submit</button>
+
+        </form> 
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script src="./Assets/JS/sign.js"></script>
+    <script src="./Assets/Bootstrap/js/bootstrap.min.js"></script>
+    
+
+
+</body>
+</html>
